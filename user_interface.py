@@ -34,7 +34,7 @@ def user_interface():
     guess_counter = 1
 
     while guess != correctword:
-        print(correctword)
+        #print(correctword)
         guess_counter = guess_counter + 1
         for i in range(len(guess)):
             gray_counter = 0
