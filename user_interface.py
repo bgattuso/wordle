@@ -31,8 +31,11 @@ def user_interface():
 
     init(autoreset=True)
 
+    guess_counter = 1
+
     while guess != correctword:
-        #print(correctword)
+        print(correctword)
+        guess_counter = guess_counter + 1
         for i in range(len(guess)):
             gray_counter = 0
             guess_letter = guess[i]
@@ -80,6 +83,7 @@ def user_interface():
 
 
     print('The word is', correctword)
+    print('It took you', guess_counter, 'guesses to solve this Wordle')
 
     play_again = input('Do you want to play again? Enter y if yes, if not enter anything other than y to stop:')
     if play_again == 'y':
